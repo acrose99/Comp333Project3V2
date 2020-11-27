@@ -11,10 +11,23 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "")
 public class PartnerRequest {
-    private String name;
+    private String firstName;
+    private String lastName;
     public PartnerRequest() {}
 
-    public String getName() {return name;}
+    public String getFirstName() {return firstName;}
 
-    public void setName() {this.name = name;}
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setName(String firstName, String lastName) {this.firstName = firstName; this.lastName = lastName;}
 }

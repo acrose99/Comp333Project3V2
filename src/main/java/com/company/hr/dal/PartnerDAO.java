@@ -24,7 +24,7 @@ public class PartnerDAO {
         Iterator<Partner> it = partners.iterator();
         while(it.hasNext()) {
             Partner pro = (Partner)it.next();
-            if (pro.getProductID().equals(id)) {
+            if (pro.getPartnerID().equals(id)) {
                 return pro;
             }
         }
@@ -38,7 +38,7 @@ public class PartnerDAO {
         long randomLong = randomGenerator.nextLong();
         String id = "PR" + randomInt;
 
-        product.setProductID(id);
+        product.setPartnerID(id);
         product.setName(firstName);
         partners.add(product);
 
@@ -49,7 +49,7 @@ public class PartnerDAO {
         Iterator<Partner> it = partners.iterator();
         while(it.hasNext()) {
             Partner pro = (Partner)it.next();
-            if (pro.getProductID().equals(id)) {
+            if (pro.getPartnerID().equals(id)) {
                 return;
             }
         }
@@ -59,7 +59,7 @@ public class PartnerDAO {
         Iterator<Partner> it = partners.iterator();
         while(it.hasNext()) {
             Partner pro = (Partner)it.next();
-            if (pro.getProductID().equals(id)) {
+            if (pro.getPartnerID().equals(id)) {
                 partners.remove(pro);
                 return;
             }

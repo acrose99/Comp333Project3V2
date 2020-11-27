@@ -14,7 +14,7 @@ public class PartnerActivity {
     //private static ProductDAO dao = new ProductDAO();
     private static PartnerManager pr = new PartnerManager();
 
-    public Set<PartnerRepresentation> getPartner() {
+    public Set<PartnerRepresentation> getPartners() {
 
         Set<Partner> partners = new HashSet<Partner>();
         Set<PartnerRepresentation> partnerRepresentations = new HashSet<PartnerRepresentation>();
@@ -42,7 +42,7 @@ public class PartnerActivity {
         return proRep;
     }
 
-    public PartnerRepresentation createProduct(String firstName, String lastName) {
+    public PartnerRepresentation createPartner(String firstName, String lastName) {
 
         //com.company.hr.Product pro = dao.addProduct(firstName, lastName);
         Partner pat = pr.addPartner(firstName, lastName);
