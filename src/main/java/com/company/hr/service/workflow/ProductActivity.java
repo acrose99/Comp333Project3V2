@@ -30,7 +30,7 @@ public class ProductActivity {
         while(it.hasNext()) {
             Product pro = (Product)it.next();
             ProductRepresentation productRepresentation = new ProductRepresentation();
-            productRepresentation.setPartnerId(pro.getPartnerId());
+            productRepresentation.setPartnerId(pro.getProductID());
             productRepresentation.setName(pro.getName());
 
             //now add this representation in the list
@@ -46,19 +46,19 @@ public class ProductActivity {
 
         ProductRepresentation proRep = new ProductRepresentation();
         proRep.setName(pro.getName());
-        proRep.setPartnerId(pro.getPartnerId());
+        proRep.setPartnerId(pro.getProductID());
 
         return proRep;
     }
 
-    public ProductRepresentation createProduct(String firstName, String lastName) {
+    public ProductRepresentation createProduct(String name) {
 
         //com.company.hr.Product pro = dao.addProduct(firstName, lastName);
-        Product pro = pr.addProduct(firstName, lastName);
+        Product pro = pr.addProduct(name);
 
         ProductRepresentation proRep = new ProductRepresentation();
         proRep.setName(pro.getName());
-        proRep.setPartnerId(pro.getPartnerId());
+        proRep.setPartnerId(pro.getDescription());
         return proRep;
     }
 

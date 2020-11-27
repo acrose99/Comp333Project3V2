@@ -13,10 +13,42 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "")
 public class ProductRequest {
+    private String partnerId;
     private String name;
+    private String photoURL;
+    private String description;
+
     public ProductRequest() {}
 
-    public String getName() {return name;}
+    public String getPartnerId() {
+        return partnerId;
+    }
 
-    public void setName() {this.name = name;}
+    public void setPartnerId(String partnerId) {
+        this.partnerId = partnerId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPhotoURL() {
+        return photoURL;
+    }
+
+    public void setPhotoUrl(String name) {
+        this.photoURL = photoURL;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String name) {
+        this.description = name;
+    }
 }

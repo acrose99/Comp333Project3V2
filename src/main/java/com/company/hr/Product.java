@@ -15,11 +15,11 @@ public class Product {
 	private String photoURL;
 	private String description;
 	
-	public String getPartnerId() {
+	public String getProductID() {
 		return partnerId;
 	}
 
-	public void setPartnerId(String partnerId) {
+	public void setProductID(String partnerId) {
 		this.partnerId = partnerId;
 	}
 	
@@ -47,7 +47,4 @@ public class Product {
 		this.description = name;
 	}
 
-
-	public void setGid(String xy1111) {
-	}
 }

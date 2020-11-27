@@ -18,9 +18,9 @@ public class ProductManager {
     }
 
 
-    public Product addProduct(String firstName, String lastName) {
+    public Product addProduct(String name) {
 
-        Product pro = dao.addProduct(firstName, lastName);
+        Product pro = dao.addProduct(name);
 
         return pro;
     }
