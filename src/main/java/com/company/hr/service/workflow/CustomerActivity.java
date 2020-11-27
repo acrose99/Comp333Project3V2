@@ -68,13 +68,12 @@ public class CustomerActivity {
 
         return cusREP;
     }
-//
-//    public String deleteEmployee(String id) {
-//
-//        //dao.deleteEmployee(id);
-//        cm.deleteEmployee(id);
-//
-//        return "OK";
-//    }
+
+    public String deleteEmployee(String id) {
+
+        cm.deleteCustomer(id);
+
+        return "OK";
+    }
 
 }

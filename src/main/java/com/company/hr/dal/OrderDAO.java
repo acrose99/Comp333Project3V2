@@ -20,7 +20,7 @@ public class OrderDAO{
                 Example
          */
         order.setFulfilled(false);
-        order.setOrderID("2312312");
+        order.setOrderID("32132");
         order.setProductID(productID);
         order.setCustomerID(customerID);
         orders.add(order);
@@ -32,7 +32,7 @@ public class OrderDAO{
                 Example
          */
         order.setFulfilled(false);
-        order.setOrderID("2312312");
+        order.setOrderID("32132");
         order.setProductID("N/A");
         order.setCustomerID("N/A");
         orders.add(order);

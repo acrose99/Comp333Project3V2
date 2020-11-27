@@ -35,8 +35,8 @@ public class CustomerResource implements CustomerService {
 
     @GET
     @Produces({"application/xml" , "application/json"})
-    @Path("/customer/{customerId}")
-    public CustomerRepresentation getCustomer(@PathParam("customerId") String id) {
+    @Path("/customer/{customerID}")
+    public CustomerRepresentation getCustomer(@PathParam("customerID") String id) {
         System.out.println("GET METHOD Request from Client with employeeRequest String ............." + id);
         CustomerActivity cusActivity = new CustomerActivity();
         return cusActivity.getCustomer(id);
@@ -51,17 +51,17 @@ public class CustomerResource implements CustomerService {
         return cusActivity.createCustomer(customerRequest.getFirstName(), customerRequest.getLastName());
     }
 
-//    @DELETE
-//    @Produces({"application/xml" , "application/json"})
-//    @Path("/customer/{customerId}")
-//    public Response deleteEmployee(@PathParam("customerId") String id) {
-//        System.out.println("Delete METHOD Request from Client with employeeRequest String ............." + id);
-//        CustomerActivity cusActivity = new CustomerActivity();
-//        String res = cusActivity.deleteEmployee(id);
-//        if (res.equals("OK")) {
-//            return Response.status(Status.OK).build();
-//        }
-//        return null;
-//    }
+    @DELETE
+    @Produces({"application/xml" , "application/json"})
+    @Path("/customer/{customerID}")
+    public Response deleteCustomer(@PathParam("customerID") String id) {
+        System.out.println("Delete METHOD Request from Client with employeeRequest String ............." + id);
+        CustomerActivity cusActivity = new CustomerActivity();
+        String res = cusActivity.deleteEmployee(id);
+        if (res.equals("OK")) {
+            return Response.status(Status.OK).build();
+        }
+        return null;
+    }
 
 }

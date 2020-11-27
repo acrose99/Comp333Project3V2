@@ -14,7 +14,7 @@ public class ProductDAO {
 
     public  ProductDAO() {
         Product product = new Product();
-        product.setProductID("Mock Partner ID");
+        product.setProductID("242342421");
         product.setName("John");
         product.setName("John");
         product.setDescription("Description: Hello World");

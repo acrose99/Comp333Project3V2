@@ -23,12 +23,12 @@ public class PartnerManager {
         return pat;
     }
 
-//    public void updateEmployee(String id, long salary) {
-//        dao.updateEmployee(id, salary);
-//    }
-//
-//    public void deleteEmployee(String id) {
-//        dao.deleteEmployee(id);
-//    }
+    public void updatePartner(String id, long salary) {
+        dao.updatePartner(id, salary);
+    }
+
+    public void deletePartner(String id) {
+        dao.deletePartner(id);
+    }
 
 }

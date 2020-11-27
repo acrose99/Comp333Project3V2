@@ -15,7 +15,7 @@ public class PartnerResource implements PartnerService {
 
     @GET
     @Produces({"application/xml" , "application/json"})
-    @Path("/employee")
+    @Path("/partner")
     //@Cacheable(cc="public, maxAge=3600") example for caching
     public Set<PartnerRepresentation> getPartners() {
         System.out.println("GET METHOD Request for all employees .............");
@@ -25,8 +25,8 @@ public class PartnerResource implements PartnerService {
 
     @GET
     @Produces({"application/xml" , "application/json"})
-    @Path("/employee/{employeeId}")
-    public PartnerRepresentation getPartner(@PathParam("employeeId") String id) {
+    @Path("/partner/{partnerID}")
+    public PartnerRepresentation getPartner(@PathParam("partnerID") String id) {
         System.out.println("GET METHOD Request from Client with employeeRequest String ............." + id);
         PartnerActivity patActivity = new PartnerActivity();
         return patActivity.getPartner(id);
@@ -34,24 +34,24 @@ public class PartnerResource implements PartnerService {
 
     @POST
     @Produces({"application/xml" , "application/json"})
-    @Path("/employee")
+    @Path("/partner")
     public PartnerRepresentation createPartner(PartnerRequest  partnerRequest) {
         System.out.println("POST METHOD Request from Client with ............." + partnerRequest.getFirstName() + "  " + partnerRequest.getLastName());
         PartnerActivity patActivity = new PartnerActivity();
         return patActivity.createPartner(partnerRequest.getFirstName(), partnerRequest.getLastName());
     }
 
-//    @DELETE
-//    @Produces({"application/xml" , "application/json"})
-//    @Path("/employee/{employeeId}")
-//    public Response deleteEmployee(@PathParam("employeeId") String id) {
-//        System.out.println("Delete METHOD Request from Client with employeeRequest String ............." + id);
-//        PartnerActivity empActivity = new PartnerActivity();
-//        String res = empActivity.deleteEmployee(id);
-//        if (res.equals("OK")) {
-//            return Response.status(Status.OK).build();
-//        }
-//        return null;
-//    }
+    @DELETE
+    @Produces({"application/xml" , "application/json"})
+    @Path("/partner/{partnerID}")
+    public Response deleteEmployee(@PathParam("partnerID") String id) {
+        System.out.println("Delete METHOD Request from Client with employeeRequest String ............." + id);
+        PartnerActivity patActivity = new PartnerActivity();
+        String res = patActivity.deletePartner(id);
+        if (res.equals("OK")) {
+            return Response.status(Status.OK).build();
+        }
+        return null;
+    }
 
 }

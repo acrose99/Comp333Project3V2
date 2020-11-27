@@ -10,10 +10,11 @@ public class PartnerDAO {
     private static Set<Partner> partners = new HashSet<Partner>();
 
     public  PartnerDAO() {
-        Partner product = new Partner();
-        product.setName("Swag Inc.");
-        product.setPassword("Description: Hello World");
-        partners.add(product);
+        Partner partner = new Partner();
+        partner.setID("2321312");
+        partner.setName("Swag Inc.");
+        partner.setPassword("HelloWorld");
+        partners.add(partner);
     }
 
     public Set<Partner> getAllPartners(){
@@ -32,17 +33,17 @@ public class PartnerDAO {
     }
 
     public Partner addPartner(String firstName, String lastName) {
-        Partner product = new Partner();
+        Partner partner = new Partner();
         Random randomGenerator = new Random();
         int randomInt = randomGenerator.nextInt(10000);
         long randomLong = randomGenerator.nextLong();
         String id = "PR" + randomInt;
 
-        product.setPartnerID(id);
-        product.setName(firstName);
-        partners.add(product);
+        partner.setPartnerID(id);
+        partner.setName(firstName);
+        partners.add(partner);
 
-        return product;
+        return partner;
     }
 
     public void updatePartner(String id) {

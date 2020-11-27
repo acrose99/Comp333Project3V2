@@ -52,12 +52,12 @@ public class PartnerActivity {
         return proRep;
     }
 
-//    public String deleteProduct(String id) {
-//
-//        //dao.deleteProduct(id);
-//        pr.deletePartner(id);
-//
-//        return "OK";
-//    }
+    public String deletePartner(String id) {
+
+        //dao.deleteProduct(id);
+        pr.deletePartner(id);
+
+        return "OK";
+    }
 
 }
