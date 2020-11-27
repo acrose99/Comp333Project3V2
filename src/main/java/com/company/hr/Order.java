@@ -12,36 +12,12 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 
 public class Order {
-    private String password;
-    private String name;
+    private String customerID; //cannot set
+    private String productID; //cannot set
+    private boolean fulfilled;
     private String orderID;
-    private String partnerID;
 
-    public String getPartnerID() {
-        return partnerID;
-    }
-
-    public void setPartnerID(String productID) {
-        this.partnerID = productID;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getOrderIDn() {
+    public String getOrderID() {
         return orderID;
     }
 
@@ -49,12 +25,27 @@ public class Order {
         this.orderID = orderID;
     }
 
-
-    public void setID(String xy1111) {
-        this.partnerID = orderID;
+    public boolean getFulfilled() {
+        return fulfilled;
     }
 
-    public Object getPartnerId() {
-        return partnerID;
+    public void setFulfilled(boolean fulfilled) {
+        this.fulfilled = fulfilled;
     }
+
+    public String getProductID() {
+        return productID;
+    }
+
+    public void setProductID(String productID) {
+        this.productID = productID;
+    }
+    public String getCustomerID() {
+        return customerID;
+    }
+
+    public void setCustomerID(String customerID) {
+        this.customerID = customerID;
+    }
+
 }

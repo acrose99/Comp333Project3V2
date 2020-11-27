@@ -23,12 +23,12 @@ public class CustomerManager {
         return cus;
     }
 
-//    public void updateEmployee(String id, long salary) {
-//        dao.updateEmployee(id, salary);
-//    }
-//
-//    public void deleteEmployee(String id) {
-//        dao.deleteEmployee(id);
-//    }
+    public void updateCustomer(String id, String email, String address, String password) {
+        dao.updateCustomer(id, email, address, password);
+    }
+
+    public void deleteCustomer(String id) {
+        dao.deleteCustomer(id);
+    }
 
 }

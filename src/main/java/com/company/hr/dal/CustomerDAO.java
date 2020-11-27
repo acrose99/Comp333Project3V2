@@ -60,6 +60,19 @@ public class CustomerDAO{
         return customer;
     }
 
+    public void updateCustomer(String id, String email, String address, String password) {
+        Iterator<Customer> it = customers.iterator();
+        while(it.hasNext()) {
+            Customer cus = (Customer)it.next();
+            if (cus.getCustomerID().equals(id)) {
+                cus.setEmail(email);
+                cus.setAddress(password);
+                cus.setEmail(address);
+                return;
+            }
+        }
+    }
+
     public void updateCustomerEmail(String id, String email) {
         Iterator<Customer> it = customers.iterator();
         while(it.hasNext()) {
