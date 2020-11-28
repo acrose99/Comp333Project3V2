@@ -1,4 +1,4 @@
-package com.company.hr;//equivalent to Employee.java, EmployeeRepresentation.java
+package main.java.com.company.hr;//equivalent to Employee.java, EmployeeRepresentation.java
 
 
 import java.io.Serializable;

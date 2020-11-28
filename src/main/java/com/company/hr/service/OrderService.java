@@ -1,8 +1,8 @@
-package com.company.hr.service;
+package  main.java.com.company.hr.service;
 
 
-import com.company.hr.service.representation.OrderRepresentation;
-import com.company.hr.service.representation.OrderRequest;
+import  main.java.com.company.hr.service.representation.OrderRepresentation;
+import  main.java.com.company.hr.service.representation.OrderRequest;
 
 import javax.jws.WebService;
 import java.util.Set;

@@ -1,12 +1,12 @@
-package com.company.hr.service;
+package  main.java.com.company.hr.service;
 
 
 import java.util.Set;
 
 import javax.jws.WebService;
 
-import com.company.hr.service.representation.CustomerRepresentation;
-import com.company.hr.service.representation.CustomerRequest;
+import  main.java.com.company.hr.service.representation.CustomerRepresentation;
+import  main.java.com.company.hr.service.representation.CustomerRequest;
 
 @WebService
 public interface CustomerService {

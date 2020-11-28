@@ -1,10 +1,9 @@
-package com.company.hr.service.workflow;
+package  main.java.com.company.hr.service.workflow;
 
 
-import com.company.hr.Partner;
-import com.company.hr.PartnerManager;
-import com.company.hr.Product;
-import com.company.hr.service.representation.PartnerRepresentation;
+import  main.java.com.company.hr.Partner;
+import  main.java.com.company.hr.PartnerManager;
+import  main.java.com.company.hr.service.representation.PartnerRepresentation;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;

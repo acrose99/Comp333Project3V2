@@ -1,4 +1,4 @@
-package com.company.hr.service;
+package  main.java.com.company.hr.service;
 
 
 import java.util.Set;
@@ -6,8 +6,8 @@ import java.util.Set;
 import javax.jws.WebService;
 
 
-import com.company.hr.service.representation.ProductRepresentation;
-import com.company.hr.service.representation.ProductRequest;
+import  main.java.com.company.hr.service.representation.ProductRepresentation;
+import  main.java.com.company.hr.service.representation.ProductRequest;
 
 @WebService
 public interface ProductService {

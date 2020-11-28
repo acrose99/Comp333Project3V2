@@ -1,7 +1,7 @@
-package com.company.hr;
+package main.java.com.company.hr;
 
 import java.util.Set;
-import com.company.hr.dal.CustomerDAO;
+import main.java.com.company.hr.dal.CustomerDAO;
 
 public class CustomerManager {
 

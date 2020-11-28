@@ -1,4 +1,4 @@
-package com.company.hr.service;
+package  main.java.com.company.hr.service;
 
 
 import java.util.Set;
@@ -12,9 +12,9 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
-import com.company.hr.service.representation.*;
-import com.company.hr.service.workflow.OrderActivity;
-import com.company.hr.service.workflow.ProductActivity;
+import  main.java.com.company.hr.service.representation.*;
+import  main.java.com.company.hr.service.workflow.OrderActivity;
+import  main.java.com.company.hr.service.workflow.ProductActivity;
 
 @Path("/productservice/")
 public class ProductResource implements ProductService {

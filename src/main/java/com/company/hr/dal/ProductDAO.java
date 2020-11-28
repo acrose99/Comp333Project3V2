@@ -1,8 +1,8 @@
 //equivalent to com.company.hr.Product DOA
 
-package com.company.hr.dal;
+package  main.java.com.company.hr.dal;
 
-import com.company.hr.Product;
+import  main.java.com.company.hr.Product;
 
 import java.util.HashSet;
 import java.util.Iterator;

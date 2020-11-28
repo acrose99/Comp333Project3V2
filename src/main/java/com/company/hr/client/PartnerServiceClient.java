@@ -1,10 +1,10 @@
 
 
 
-package com.company.hr.client;
+package main.java.com.company.hr.client;
 
-import com.company.hr.service.representation.OrderRequest;
-import com.company.hr.service.representation.PartnerRequest;
+import  main.java.com.company.hr.service.representation.OrderRequest;
+import  main.java.com.company.hr.service.representation.PartnerRequest;
 import org.apache.cxf.interceptor.LoggingInInterceptor;
 import org.apache.cxf.interceptor.LoggingOutInterceptor;
 import org.apache.cxf.jaxrs.client.WebClient;

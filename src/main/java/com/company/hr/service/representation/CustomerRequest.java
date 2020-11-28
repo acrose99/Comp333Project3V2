@@ -1,4 +1,4 @@
-package com.company.hr.service.representation;//equivalent to EmployeeRequest.java
+package  main.java.com.company.hr.service.representation;//equivalent to EmployeeRequest.java
 
 
 

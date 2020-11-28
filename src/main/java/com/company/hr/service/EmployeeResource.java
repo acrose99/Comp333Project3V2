@@ -1,4 +1,4 @@
-package com.company.hr.service;
+package  main.java.com.company.hr.service;
 
 
 import java.util.Set;
@@ -13,9 +13,9 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 import javax.ws.rs.core.CacheControl;
 
-import com.company.hr.service.representation.EmployeeRepresentation;
-import com.company.hr.service.representation.EmployeeRequest;
-import com.company.hr.service.workflow.EmployeeActivity;
+import  main.java.com.company.hr.service.representation.EmployeeRepresentation;
+import  main.java.com.company.hr.service.representation.EmployeeRequest;
+import  main.java.com.company.hr.service.workflow.EmployeeActivity;
 
 @Path("/employeeservice/")
 public class EmployeeResource implements EmployeeService {

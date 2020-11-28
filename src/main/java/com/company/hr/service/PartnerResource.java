@@ -1,9 +1,9 @@
-package com.company.hr.service;
+package  main.java.com.company.hr.service;
 
 
-import com.company.hr.service.representation.PartnerRepresentation;
-import com.company.hr.service.representation.PartnerRequest;
-import com.company.hr.service.workflow.PartnerActivity;
+import  main.java.com.company.hr.service.representation.PartnerRepresentation;
+import  main.java.com.company.hr.service.representation.PartnerRequest;
+import  main.java.com.company.hr.service.workflow.PartnerActivity;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;

@@ -1,4 +1,4 @@
-package com.company.hr.service;
+package  main.java.com.company.hr.service;
 
 
 import java.util.Set;
@@ -13,10 +13,10 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 import javax.ws.rs.core.CacheControl;
 
-import com.company.hr.service.representation.*;
-import com.company.hr.service.workflow.CustomerActivity;
-import com.company.hr.service.workflow.EmployeeActivity;
-import com.company.hr.service.workflow.OrderActivity;
+import  main.java.com.company.hr.service.representation.*;
+import  main.java.com.company.hr.service.workflow.CustomerActivity;
+import  main.java.com.company.hr.service.workflow.EmployeeActivity;
+import  main.java.com.company.hr.service.workflow.OrderActivity;
 
 @Path("/orderservice/")
 public class OrderResource implements OrderService {

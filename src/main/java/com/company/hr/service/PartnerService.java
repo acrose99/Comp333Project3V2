@@ -1,4 +1,4 @@
-package com.company.hr.service;
+package  main.java.com.company.hr.service;
 
 
 import java.util.Set;
@@ -6,8 +6,8 @@ import java.util.Set;
 import javax.jws.WebService;
 
 
-import com.company.hr.service.representation.PartnerRepresentation;
-import com.company.hr.service.representation.PartnerRequest;
+import  main.java.com.company.hr.service.representation.PartnerRepresentation;
+import  main.java.com.company.hr.service.representation.PartnerRequest;
 
 @WebService
 public interface PartnerService {

@@ -1,13 +1,12 @@
-package com.company.hr.dal;
+package  main.java.com.company.hr.dal;
 
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Random;
 import java.util.Set;
 
-import com.company.hr.Customer;
-import com.company.hr.Order;
-import com.sun.tools.corba.se.idl.constExpr.Or;
+import  main.java.com.company.hr.Customer;
+import  main.java.com.company.hr.Order;
 
 public class OrderDAO{
 

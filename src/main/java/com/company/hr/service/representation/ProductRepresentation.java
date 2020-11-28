@@ -1,4 +1,4 @@
-package com.company.hr.service.representation;
+package  main.java.com.company.hr.service.representation;
 
 
 import javax.xml.bind.annotation.XmlAccessType;

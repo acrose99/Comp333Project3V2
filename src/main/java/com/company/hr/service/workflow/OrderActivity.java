@@ -1,15 +1,12 @@
-package com.company.hr.service.workflow;
+package  main.java.com.company.hr.service.workflow;
 
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Random;
 import java.util.Set;
 
-import com.company.hr.*;
-import com.company.hr.dal.EmployeeDAO;
-import com.company.hr.service.representation.CustomerRepresentation;
-import com.company.hr.service.representation.EmployeeRepresentation;
-import com.company.hr.service.representation.OrderRepresentation;
+import  main.java.com.company.hr.*;
+import  main.java.com.company.hr.service.representation.OrderRepresentation;
 
 /**
  * This class' responsibility is to manage the workflow of accessing/creating/updating/deleting resources

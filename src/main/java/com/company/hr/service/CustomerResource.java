@@ -1,4 +1,4 @@
-package com.company.hr.service;
+package  main.java.com.company.hr.service;
 
 
 import java.util.Set;
@@ -11,14 +11,9 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
-import javax.ws.rs.core.CacheControl;
-
-import com.company.hr.service.representation.CustomerRepresentation;
-import com.company.hr.service.representation.CustomerRequest;
-import com.company.hr.service.representation.EmployeeRepresentation;
-import com.company.hr.service.representation.EmployeeRequest;
-import com.company.hr.service.workflow.CustomerActivity;
-import com.company.hr.service.workflow.EmployeeActivity;
+import  main.java.com.company.hr.service.representation.CustomerRepresentation;
+import  main.java.com.company.hr.service.representation.CustomerRequest;
+import  main.java.com.company.hr.service.workflow.CustomerActivity;
 
 @Path("/customerservice/")
 public class CustomerResource implements CustomerService {

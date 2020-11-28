@@ -1,10 +1,10 @@
-package com.company.hr.dal;
+package  main.java.com.company.hr.dal;
 
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Random;
-import java.util.Set;;
-import com.company.hr.Partner;
+import java.util.Set;
+import  main.java.com.company.hr.Partner;
 
 public class PartnerDAO {
     private static Set<Partner> partners = new HashSet<Partner>();

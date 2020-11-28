@@ -1,17 +1,17 @@
 
 
 
-package com.company.hr.client;
+package main.java.com.company.hr.client;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.xml.ws.Response;
 
-import com.company.hr.service.representation.OrderRequest;
+import  main.java.com.company.hr.service.representation.OrderRequest;
 import org.apache.cxf.jaxrs.client.WebClient;
 import org.codehaus.jackson.jaxrs.JacksonJsonProvider;
-import com.company.hr.service.representation.EmployeeRequest;
+import  main.java.com.company.hr.service.representation.EmployeeRequest;
 import org.apache.cxf.interceptor.LoggingInInterceptor;
 import org.apache.cxf.interceptor.LoggingOutInterceptor;
 

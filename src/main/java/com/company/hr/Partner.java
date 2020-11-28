@@ -1,7 +1,7 @@
 //equivalent to Employee.java, EmployeeRepresentation.java
 
 
-package com.company.hr;
+package main.java.com.company.hr;
 
 import java.io.Serializable;
 import java.util.Set;

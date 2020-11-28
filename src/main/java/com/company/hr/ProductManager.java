@@ -1,6 +1,6 @@
-package com.company.hr;// EmployeeManager.java
+package main.java.com.company.hr;// EmployeeManager.java
 
-import com.company.hr.dal.ProductDAO;
+import main.java.com.company.hr.dal.ProductDAO;
 
 import java.util.Set;
 

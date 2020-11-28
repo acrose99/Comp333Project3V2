@@ -1,12 +1,12 @@
-package com.company.hr.service.workflow;
+package  main.java.com.company.hr.service.workflow;
 
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-import com.company.hr.Product;
-import com.company.hr.ProductManager;
-import com.company.hr.service.representation.ProductRepresentation;
+import  main.java.com.company.hr.Product;
+import  main.java.com.company.hr.ProductManager;
+import  main.java.com.company.hr.service.representation.ProductRepresentation;
 
 
 /**

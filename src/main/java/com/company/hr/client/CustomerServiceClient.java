@@ -1,9 +1,9 @@
 
 
 
-package com.company.hr.client;
+package main.java.com.company.hr.client;
 
-import com.company.hr.service.representation.CustomerRequest;
+import main.java.com.company.hr.service.representation.CustomerRequest;
 import org.apache.cxf.interceptor.LoggingInInterceptor;
 import org.apache.cxf.interceptor.LoggingOutInterceptor;
 import org.apache.cxf.jaxrs.client.WebClient;
@@ -29,7 +29,7 @@ public final class CustomerServiceClient {
          * GET METHOD invoke
          *****************************************************************************************/
         System.out.println("GET METHOD .........................................................");
-        WebClient getClient = WebClient.create("http://localhost:8081", providers);
+        WebClient getClient = WebClient.create("http://localhost:8000", providers);
 
         //Configuring the CXF logging interceptor for the outgoing message
         WebClient.getConfig(getClient).getOutInterceptors().add(new LoggingOutInterceptor()); //deprecated
@@ -37,7 +37,7 @@ public final class CustomerServiceClient {
         WebClient.getConfig(getClient).getInInterceptors().add(new LoggingInInterceptor()); //deprecated
 
         // change application/xml  to get in xml format
-        getClient = getClient.accept("application/json").type("application/json").path("/customerservice/customer/321321");
+        getClient = getClient.accept("application/json").type("application/json").path("customerservice/customer/321321");
 
         //The following lines are to show how to log messages without the CXF interceptors
         String getRequestURI = getClient.getCurrentURI().toString();
@@ -58,7 +58,7 @@ public final class CustomerServiceClient {
          * POST METHOD invoke
          *****************************************************************************************/
         System.out.println("POST METHOD .........................................................");
-        WebClient postClient = WebClient.create("http://localhost:8081", providers);
+        WebClient postClient = WebClient.create("http://localhost:8000", providers);
         WebClient.getConfig(postClient).getOutInterceptors().add(new LoggingOutInterceptor());
         WebClient.getConfig(postClient).getInInterceptors().add(new LoggingInInterceptor());
 
@@ -80,7 +80,7 @@ public final class CustomerServiceClient {
          * GET METHOD invoke for all employees
          *****************************************************************************************/
         System.out.println("GET METHOD for all employees..........................................");
-        WebClient getAllClient = WebClient.create("http://localhost:8081", providers);
+        WebClient getAllClient = WebClient.create("http://localhost:8000", providers);
         WebClient.getConfig(getAllClient).getOutInterceptors().add(new LoggingOutInterceptor());
         WebClient.getConfig(getAllClient).getInInterceptors().add(new LoggingInInterceptor());
 
@@ -100,7 +100,7 @@ public final class CustomerServiceClient {
          * DELETE METHOD invoke
          *****************************************************************************************/
         System.out.println("DELETE METHOD .........................................................");
-        WebClient deleteClient = WebClient.create("http://localhost:8081", providers);
+        WebClient deleteClient = WebClient.create("http://localhost:8000", providers);
         WebClient.getConfig(deleteClient).getOutInterceptors().add(new LoggingOutInterceptor());
         WebClient.getConfig(deleteClient).getInInterceptors().add(new LoggingInInterceptor());
 
