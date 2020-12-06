@@ -11,16 +11,16 @@
  							http://cxf.apache.org/schemas/jaxrs.xsd">
   <import resource="classpath:META-INF/cxf/cxf.xml" />
   <import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
-  	
+
   <bean id="jacksonProvider" class="org.codehaus.jackson.jaxrs.JacksonJaxbJsonProvider" />
-      	
+
   <jaxrs:server name="EmployeeService" address="http://localhost:8081">
 		<jaxrs:serviceBeans>
 			<ref bean="employeeServiceRest" />
 		</jaxrs:serviceBeans>
 		<jaxrs:providers>
 			<ref bean="jacksonProvider" />
-		</jaxrs:providers> 
+		</jaxrs:providers>
 
 		<jaxrs:schemaLocations>
 			<jaxrs:schemaLocation>com.company.hr.service.representation.EmployeeRequest</jaxrs:schemaLocation>
@@ -28,6 +28,90 @@
 		</jaxrs:schemaLocations>
 
 	</jaxrs:server>
-  	<bean id="employeeServiceRest" class="com.company.hr.service.EmployeeResource" />
-  
+
+  	<bean id="employeeServiceRest" class="com.hr.service.EmployeeResource" />
+
+	<jaxrs:server name="CustomerService" address="http://localhost:8081">
+		<jaxrs:serviceBeans>
+			<ref bean="customerServiceRest" />
+		</jaxrs:serviceBeans>
+		<jaxrs:providers>
+			<ref bean="jacksonProvider" />
+		</jaxrs:providers>
+
+		<jaxrs:schemaLocations>
+			<jaxrs:schemaLocation>com.company.hr.service.representation.EmployeeRequest</jaxrs:schemaLocation>
+			<jaxrs:schemaLocation>com.company.hr.service.representation.EmployeeRepresentation</jaxrs:schemaLocation>
+		</jaxrs:schemaLocations>
+	</jaxrs:server>
+
+	<bean id="customerServiceRest" class="com.hr.service.CustomerResource" />
+
+	<jaxrs:server name="OrderService" address="http://localhost:8081">
+		<jaxrs:serviceBeans>
+			<ref bean="orderServiceRest" />
+		</jaxrs:serviceBeans>
+		<jaxrs:providers>
+			<ref bean="jacksonProvider" />
+		</jaxrs:providers>
+
+		<jaxrs:schemaLocations>
+			<jaxrs:schemaLocation>com.company.hr.service.representation.EmployeeRequest</jaxrs:schemaLocation>
+			<jaxrs:schemaLocation>com.company.hr.service.representation.EmployeeRepresentation</jaxrs:schemaLocation>
+		</jaxrs:schemaLocations>
+	</jaxrs:server>
+
+	<bean id="orderServiceRest" class="com.hr.service.OrderResource" />
+
+	<jaxrs:server name="PartnerService" address="http://localhost:8081">
+		<jaxrs:serviceBeans>
+			<ref bean="partnerServiceRest" />
+		</jaxrs:serviceBeans>
+		<jaxrs:providers>
+			<ref bean="jacksonProvider" />
+		</jaxrs:providers>
+
+		<jaxrs:schemaLocations>
+			<jaxrs:schemaLocation>com.company.hr.service.representation.EmployeeRequest</jaxrs:schemaLocation>
+			<jaxrs:schemaLocation>com.company.hr.service.representation.EmployeeRepresentation</jaxrs:schemaLocation>
+		</jaxrs:schemaLocations>
+	</jaxrs:server>
+
+	<bean id="partnerServiceRest" class="com.hr.service.PartnerResource" />
+
+
+	<jaxrs:server name="PartnerService" address="http://localhost:8081">
+		<jaxrs:serviceBeans>
+			<ref bean="partnerServiceRest" />
+		</jaxrs:serviceBeans>
+		<jaxrs:providers>
+			<ref bean="jacksonProvider" />
+		</jaxrs:providers>
+
+		<jaxrs:schemaLocations>
+			<jaxrs:schemaLocation>com.company.hr.service.representation.EmployeeRequest</jaxrs:schemaLocation>
+			<jaxrs:schemaLocation>com.company.hr.service.representation.EmployeeRepresentation</jaxrs:schemaLocation>
+		</jaxrs:schemaLocations>
+	</jaxrs:server>
+
+	<bean id="partnerServiceRest" class="com.hr.service.PartnerResource" />\
+
+	<jaxrs:server name="ProductService" address="http://localhost:8081">
+		<jaxrs:serviceBeans>
+			<ref bean="productServiceRest" />
+		</jaxrs:serviceBeans>
+		<jaxrs:providers>
+			<ref bean="jacksonProvider" />
+		</jaxrs:providers>
+
+		<jaxrs:schemaLocations>
+			<jaxrs:schemaLocation>com.company.hr.service.representation.EmployeeRequest</jaxrs:schemaLocation>
+			<jaxrs:schemaLocation>com.company.hr.service.representation.EmployeeRepresentation</jaxrs:schemaLocation>
+		</jaxrs:schemaLocations>
+	</jaxrs:server>
+
+	<bean id="productServiceRest" class="com.hr.service.ProductResource" />
+
+
 </beans>
+
